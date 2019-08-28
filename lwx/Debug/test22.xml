@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="800,600" sizebox="4,4,4,4" caption="0,0,0,32" mininfo="600,400">
+    <Default name="Button" value="  height=&quot;25&quot; width=&quot;60&quot; normalimage=&quot;file=&apos;BtnStyle\XP\button_nor.png&apos;&quot; hotimage=&quot;file=&apos;BtnStyle\XP\button_over.png&apos;&quot; pushedimage=&quot;file=&apos;BtnStyle\XP\button_down.png&apos;&quot; focusedimage=&quot;file=&apos;BtnStyle\XP\button_focus.png&apos;&quot; " />
+    <VerticalLayout bkcolor="#FFF0F0FA" bkcolor2="#FF4D4DFF">
+        <HorizontalLayout height="32" bkcolor="#00FF00FF" bkcolor2="#0FF00FFF">
+            <VerticalLayout />
+            <VerticalLayout width="77">
+                <Button name="minbtn" tooltip="最小化" float="true" pos="0,5,0,0" width="23" height="19" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;SysBtn\MinNormal.bmp&apos; " hotimage=" file=&apos;SysBtn\MinFocus.bmp&apos; " pushedimage=" file=&apos;SysBtn\MinFocus.bmp&apos; " focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Button name="maxbtn" tooltip="最大化" float="true" pos="22,5,0,0" width="23" height="19" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;SysBtn\MaxNormal.bmp&apos; " hotimage=" file=&apos;SysBtn\MaxFocus.bmp&apos; " pushedimage=" file=&apos;SysBtn\MaxFocus.bmp&apos; " focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Button name="restorebtn" tooltip="还原" visible="false" float="true" pos="22,5,0,0" width="23" height="19" align="center" normalimage=" file=&apos;SysBtn\StoreNormal.bmp&apos; " hotimage=" file=&apos;SysBtn\StoreFocus.bmp&apos; " pushedimage=" file=&apos;SysBtn\StoreFocus.bmp&apos; " focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Button name="closebtn" tooltip="关闭" float="true" pos="44,5,0,0" width="28" height="19" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;SysBtn\CloseNormal.bmp&apos; " hotimage=" file=&apos;SysBtn\CloseFocus.bmp&apos; " pushedimage=" file=&apos;SysBtn\CloseFocus.bmp&apos; " focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+            </VerticalLayout>
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <VerticalLayout />
+            <VerticalLayout width="358" height="570">
+                <Combo name="FileChose" float="true" pos="7,27,0,0" width="60" height="33" normalimage="file='ComboBox/Combo_nor.bmp'" hotimage="file='ComboBox/Combo_over.bmp' " pushedimage="file='ComboBox/Combo_over.bmp' " >
+                <ListLabelElement text="视频" selected="true" />
+                <ListLabelElement text="图片" />
+            </Combo>  
+				<Edit name="FilePath" float="true" pos="71,27,0,0" width="284" height="33" padding="10,5,0,0" textpadding="5,5,5,5" bkcolor="#FFFFFFFF" width="350" height="28"  font="0"  tipvalue="请输入用户名" tipvaluecolor="#FF989898" nativetextcolor="#FF000000" nativebkcolor="#FFFFFFFF" textcolor="#FFFF0000"  />
+                <Text name="start" text="start" float="true" pos="9,100,0,0" width="41" height="19" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+                <Edit name="VideoStart" float="true" pos="55,95,0,0" width="120" height="29" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <Text name="end" text="end" float="true" pos="184,101,0,0" width="32" height="20" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+                <Edit name="VideoEnd" float="true" pos="223,95,0,0" width="131" height="29" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <List float="true" pos="7,146,0,0" width="339" height="391" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF0FCD00" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF">
+                    <ListHeader width="339" height="26" />
+                </List>
+            </VerticalLayout>
+            <VerticalLayout width="91" height="570">
+                <Button name="FileLoad" text="加载" float="true" pos="15,25,0,0" width="62" height="36" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;BtnStyle\XP\button_nor.png&apos;" hotimage="file=&apos;BtnStyle\XP\button_over.png&apos;" pushedimage="file=&apos;BtnStyle\XP\button_down.png&apos;" focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Button name="VideoCut" text="截取" float="true" pos="15,94,0,0" width="60" height="29" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;BtnStyle\XP\button_nor.png&apos;" hotimage="file=&apos;BtnStyle\XP\button_over.png&apos;" pushedimage="file=&apos;BtnStyle\XP\button_down.png&apos;" focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Button name="SrtLoad" text="加载srt" float="true" pos="15,146,0,0" width="60" height="27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;BtnStyle\XP\button_nor.png&apos;" hotimage="file=&apos;BtnStyle\XP\button_over.png&apos;" pushedimage="file=&apos;BtnStyle\XP\button_down.png&apos;" focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Button name="AssCreat" text="生成ASS" float="true" pos="15,182,0,0" width="60" height="27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;BtnStyle\XP\button_nor.png&apos;" hotimage="file=&apos;BtnStyle\XP\button_over.png&apos;" pushedimage="file=&apos;BtnStyle\XP\button_down.png&apos;" focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Button name="AssLoad" text="烧录ASS" float="true" pos="15,219,0,0" width="60" height="27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;BtnStyle\XP\button_nor.png&apos;" hotimage="file=&apos;BtnStyle\XP\button_over.png&apos;" pushedimage="file=&apos;BtnStyle\XP\button_down.png&apos;" focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Button name="gifCreat" text="生成gif" float="true" pos="15,256,0,0" width="60" height="27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;BtnStyle\XP\button_nor.png&apos;" hotimage="file=&apos;BtnStyle\XP\button_over.png&apos;" pushedimage="file=&apos;BtnStyle\XP\button_down.png&apos;" focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Button name="BtnItalic" text="斜体" float="true" pos="15,294,0,0" width="60" height="27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;BtnStyle\XP\button_nor.png&apos;" hotimage="file=&apos;BtnStyle\XP\button_over.png&apos;" pushedimage="file=&apos;BtnStyle\XP\button_down.png&apos;" focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Button name="BtnBold" text="粗体" float="true" pos="15,331,0,0" width="60" height="27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;BtnStyle\XP\button_nor.png&apos;" hotimage="file=&apos;BtnStyle\XP\button_over.png&apos;" pushedimage="file=&apos;BtnStyle\XP\button_down.png&apos;" focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Button name="BtnTypeface" text="字体" float="true" pos="15,368,0,0" width="60" height="27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;BtnStyle\XP\button_nor.png&apos;" hotimage="file=&apos;BtnStyle\XP\button_over.png&apos;" pushedimage="file=&apos;BtnStyle\XP\button_down.png&apos;" focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Button name="BtnFontColor" text="颜色" float="true" pos="15,404,0,0" width="60" height="27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;BtnStyle\XP\button_nor.png&apos;" hotimage="file=&apos;BtnStyle\XP\button_over.png&apos;" pushedimage="file=&apos;BtnStyle\XP\button_down.png&apos;" focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Button name="BtnShadow" text="阴影" float="true" pos="15,439,0,0" width="60" height="27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;BtnStyle\XP\button_nor.png&apos;" hotimage="file=&apos;BtnStyle\XP\button_over.png&apos;" pushedimage="file=&apos;BtnStyle\XP\button_down.png&apos;" focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+            </VerticalLayout>
+            <VerticalLayout width="311" height="568">
+                <Button name="BtnAlter" text="修改" float="true" pos="121,497,0,0" width="60" height="31" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;BtnStyle\XP\button_nor.png&apos;" hotimage="file=&apos;BtnStyle\XP\button_over.png&apos;" pushedimage="file=&apos;BtnStyle\XP\button_down.png&apos;" focusedimage="file=&apos;BtnStyle\XP\button_focus.png&apos;" />
+                <Edit float="true" pos="7,104,0,0" width="300" height="344" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            </VerticalLayout>
+            <VerticalLayout />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>
